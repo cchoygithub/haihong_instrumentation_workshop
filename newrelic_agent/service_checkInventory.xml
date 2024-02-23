@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension xmlns="https://newrelic.com/docs/java/xsd/v1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="newrelic-extension extension.xsd" name="extension-example" version="1.0" enabled="true">
+  <instrumentation>
+    <pointcut transactionStartPoint="false" ignoreTransaction="false">
+      <className>com.nr.workshop.orderservice.service.InventoryService</className>
+      <method>
+        <name>checkInventory</name>
+        <parameters>
+          <type attributeName="">java.lang.String</type>
+          <type attributeName="">int</type>
+        </parameters>
+      </method>
+    </pointcut>
+  </instrumentation>
+</extension>

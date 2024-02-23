@@ -1,0 +1,3 @@
+rootProject.name = 'workshop_weaver'
+
+include 'inventoryService_Instrumentation'

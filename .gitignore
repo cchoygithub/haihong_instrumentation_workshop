@@ -1,0 +1,56 @@
+HELP.md
+.gradle
+env
+
+build/
+!just-order-app/build
+# !couponService/build/libs/couponService-0.0.1-SNAPSHOT.jar
+# !fulfilmentService/build/libs/fulfilmentService-0.0.1-SNAPSHOT.jar
+# !inventoryService/build/libs/inventoryService-0.0.1-SNAPSHOT.jar
+# !orderService/build/libs/orderService-0.0.1-SNAPSHOT.jar
+# !SPAServer/build/libs/SPAServer-0.0.1-SNAPSHOT.jar
+
+# **/build/classes
+# **/build/resources
+# **/build/tmp
+# **/*plain.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### env 
+.env
+node_modules/
+# applogs/
+.DS_Store
+logs/

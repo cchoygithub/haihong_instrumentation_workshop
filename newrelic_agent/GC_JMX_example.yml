@@ -1,0 +1,10 @@
+name: myCustomMetrics
+version: 1.3
+enabled: true
+jmx:
+  - object_name: java.lang:name=*,type=GarbageCollector
+    root_metric_name: itsCustomMetrics/{name}
+    metrics:
+      - attribute: CollectionCount
+        type: simple
+

@@ -1,0 +1,65 @@
+label, input, button {
+    margin: 10px;
+    padding: 5px;
+}
+
+.text-class {
+    width: 95%; /* 60% of the screen width */
+    border: 2px solid lightcyan; /* Thicker border in cyan */
+    background-color:rgb(26, 24, 24); /* Dark background */
+    color: greenyellow; 
+    text-align: left; /* Left-aligned text */
+    margin: 20px auto; /* Center horizontally with 20px margin around the box */
+    font-size: 18px; /* Smaller font size */
+    padding: 20px; /* Add 20px padding around the text inside the box */  
+    white-space: pre-wrap;
+    word-break: break-all; /* Allow long words to break */    
+    /* overflow: auto;  */
+  }
+  
+footer {
+    bottom: 0;
+    position: absolute;
+    width: 90%;
+    height: 40px;
+}
+
+.LoginForm input[type="text"],
+.LoginForm input[type="password"] {
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    padding: 8px;
+    outline: none; 
+    width: 10%;
+}
+
+.LoginForm input[type="text"]:hover,
+.LoginForm input[type="password"]:hover {
+    border-color: rgb(28, 154, 208);
+}
+
+.input-label {
+    display: inline-block;
+    width: 100px; /* Adjust the width as needed */
+    text-align: right;
+    margin-right: 10px; /* Adjust as needed for spacing */
+}
+
+.wider-button {
+    text-align: right;
+    margin-left: 20px; /* Adjust as needed for spacing */
+    width: 230px; /* Adjust the width as needed */
+    margin-top:1px
+}
+.wide-input {
+    width: 300px; /* Adjust the width as needed */
+}
+.bordered-text {
+    padding: 8px 30px; /* Add padding */
+    margin: 0 auto; /* Center horizontally */
+
+    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); /* Add 3D effect */
+    display: inline-block; /* Ensure the element respects margin properties */
+    margin-bottom: 10px;
+  }
