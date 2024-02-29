@@ -13,7 +13,7 @@ cd instrumentation_workshop
 
 In `instrumentation_workshop` folder,  
 ```
-docker-compose -f docker/docker-compose.yml up -ds
+docker-compose -f docker/docker-compose.yml up -d
 ```
 
 **verify the docker container are running**
