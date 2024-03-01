@@ -43,6 +43,7 @@
 
 - Rebuild the `just-order-app` Reactjs app in `instrumentation_workshop/just-order-app` folder
   ```
+  npm install
   npm run build
   ```
     ![Lab Diagram](../assets/images/npmRunBuild.png)
