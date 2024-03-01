@@ -38,7 +38,7 @@
     ![Lab Diagram](../assets/images/BrowserAgent2.png)
 
 - Copy the "Browser agent snippet" by clicking `Copy to clipboard` 
-- Paste the snippet to `just-order-app` frontend index.html (search "WORKSHOP_LAB1-2")
+- Paste the snippet to `just-order-app` frontend index.html (search for "WORKSHOP_LAB1-2")
     ![Lab Diagram](../assets/images/addBrowserAgentgSnippet.png)
 
 - Rebuild the `just-order-app` Reactjs app in `instrumentation_workshop/just-order-app` folder
@@ -51,6 +51,5 @@
 - Restart SPAServer in `instrumentation_workshop` folder
 
     ```
-    #
     ./inst_apps.sh restart SPAServer
     ```
