@@ -3,9 +3,14 @@
 git clone https://github.com/haihongren/instrumentation_workshop
 
 ```
-### Build the project
+### Build the project  
+> **make sure java version >=17**
+> ```
+>   java -version 
+>  ```
 ```
 cd instrumentation_workshop
+
  ./gradlew clean build
 ```
 ### Start Kafka and MySQL with Docker-Compose
