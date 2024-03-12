@@ -152,7 +152,7 @@ function ListProductsComponent() {
 
                 </table>
             </div>
-            <div className="btn btn-success m-5" onClick={addnewproduct}>Add New product</div>
+            <div className="btn btn-success m-8" onClick={addnewproduct}>Add New product</div>
         </div>
     )
 }

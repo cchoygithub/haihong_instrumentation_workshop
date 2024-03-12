@@ -6,6 +6,8 @@ import ErrorComponent from './ErrorComponent'
 import WelcomeComponent from './WelcomeComponent'
 import LoginComponent from './LoginComponent'
 import ProductComponent from './ProductComponent'
+import AppHealthMonitor from './AppHealthMonitor'
+
 
 import AuthProvider, { useAuth } from './security/AuthContext'
 
@@ -42,32 +44,38 @@ export default function JustOrderApp() {
                         <Route path='/' element={
                             <UnAuthenticatedRoute>
                                 <LoginComponent />
+                                <AppHealthMonitor/>
                             </UnAuthenticatedRoute> 
                         } />
                         <Route path='/login' element={
                             <UnAuthenticatedRoute>
                                 <LoginComponent />
+                                <AppHealthMonitor/>
                             </UnAuthenticatedRoute> 
                         } />
                         <Route path='/welcome' element={
                             <AuthenticatedRoute>
                                 <WelcomeComponent />
+                                <AppHealthMonitor/>                                
                             </AuthenticatedRoute> 
                         } />                          
                         <Route path='/welcome/' element={
                             <AuthenticatedRoute>
                                 <WelcomeComponent />
+                                <AppHealthMonitor/>                                
                             </AuthenticatedRoute> 
                         } />                        
                         <Route path='/welcome/:username' element={
                             <AuthenticatedRoute>
                                 <WelcomeComponent />
+                                <AppHealthMonitor/>
                             </AuthenticatedRoute> 
                         } />
                         
                         <Route path='/products' element={
                             <AuthenticatedRoute>
                                 <ListProductsComponent /> 
+                                <AppHealthMonitor/>                                
                             </AuthenticatedRoute>
                         } />
                         <Route path='/products/:id' element={
@@ -79,6 +87,7 @@ export default function JustOrderApp() {
                         <Route path='/logout' element={
                             <AuthenticatedRoute>
                                 <LogoutComponent /> 
+                                <AppHealthMonitor/>
                             </AuthenticatedRoute>
                         } />
                         

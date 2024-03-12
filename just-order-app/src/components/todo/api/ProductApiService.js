@@ -22,3 +22,7 @@ export const orderproductApi
 
 export const vendordetailsApi
 = ( product) => apiClient.get(`/restapi/vendor-details/${product.vendor}`)
+
+// health status
+export const HealthApi
+    = "/actuator/health"

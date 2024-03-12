@@ -28,6 +28,8 @@ public class SecurityConfig {
 
         http.csrf().disable().authorizeHttpRequests((authorize) -> {
             authorize
+//                    .requestMatchers("/**").permitAll()
+                    .requestMatchers("/actuator/**").permitAll()
 //                    .requestMatchers("/products").authenticated()
 //                    .requestMatchers("/products/**").authenticated()
 //                    .requestMatchers("/*").permitAll()
