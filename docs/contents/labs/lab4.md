@@ -11,3 +11,20 @@ This lab will be quick.
 
  ![Lab Diagram](../assets/images/lightUpKafka.png)
 
+
+- Restart producer `orderService` app and consumer `fulfilmentService`  
+    or simply restart all the apps for the change to take effect
+    ```
+    ./inst_apps.sh restart orderService
+    ./inst_apps.sh restart fulfilmentService    
+    or
+    ./inst_apps.sh restart all    
+    ```
+
+- Generate new order traffic
+   Wait for a few minutes, the Kafka metrics will be collected and the Kafka Nerdlet UI will be populated. 
+
+
+
+
+

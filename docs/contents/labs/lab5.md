@@ -10,6 +10,11 @@
     - response.headers.contentType    
 
 - `just-order-app` sends `workshopusername` in each request header.   
+
+   The following is an example of the `order` request in Browser developer console. 
+ 
+    ![Lab Diagram](../assets/images/requestHeader.png)  
+
    To capture `workshopusername` in request header as custom attribute, config newrelic yml. 
 
     ![Lab Diagram](../assets/images/captureHeaders.png)
@@ -21,6 +26,8 @@
     or
     ./inst_apps.sh restart all    
     ```
+
+- Generate new order traffic from `just-order-app` frontend app 
 
 - verify `workshopusername` is captured as `myLoginUsername`  
 
