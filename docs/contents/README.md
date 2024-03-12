@@ -7,6 +7,8 @@
 - [Setup the lab](setup_the_lab.md) - [Troubleshooting](troubleshooting_setup.md)
 - [Validate the setup](validate_apps.md)
 - [Log file location](lab_log_files.md)
+- [Auto generate traffic](auto_generate_traffic.md)
+
 
 ### Hands-on Labs 
 | lab    | tip |
