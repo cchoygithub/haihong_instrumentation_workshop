@@ -1,4 +1,4 @@
-package com.nr.workshop.orderservice.security;
+package com.nr.workshop.inventoryservice.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,11 +19,6 @@ public class CorsConfig {
         config.addAllowedHeader("workshopusername");
         config.addAllowedHeader("content-type");
         config.addAllowedHeader("authorization");
-
-//###WORKSHOP_LAB3-2 CORS headers (uncomment the following block to allow DT headers adding by browser agent - when it is configured)
-        // config.addAllowedHeader("newrelic");
-        // config.addAllowedHeader("traceparent");
-        // config.addAllowedHeader("tracestate");
 
         source.registerCorsConfiguration("/**", config);
         return new CorsFilter(source);
