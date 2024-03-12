@@ -36,7 +36,7 @@ const AppHealthMonitor = () => {
 
     <div className="sticky-bottom py-3">
       <div className="container d-flex justify-content-center align-items-center">
-      <div className="card col-md-10" >
+      <div className="card col-md-10 bg-light border-light shadow-sm" >
 
         <div className="card-body">
           <button className='btn btn-dark mx-2'> Service Status</button>
@@ -44,7 +44,7 @@ const AppHealthMonitor = () => {
           <button
             key={index}
             type="button"
-            className={`btn btn-outline-${app.status === 'UP' ? 'success' : 'warning'}`}
+            className={`btn btn-outline-${app.status === 'UP' ? 'success' : 'danger'}`}
             style={{ marginRight: '7px' }}
           >
             {app.appName}
