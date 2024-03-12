@@ -34,7 +34,7 @@ const AppHealthMonitor = () => {
 
   return (
 
-    <div className="sticky-bottom py-0">
+    <div className="sticky-bottom py-3">
       <div className="container d-flex justify-content-center align-items-center">
       <div className="card col-md-10" >
 
