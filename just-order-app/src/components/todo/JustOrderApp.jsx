@@ -2,7 +2,6 @@ import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 import LogoutComponent from './LogoutComponent'
 import HeaderComponent from './HeaderComponent'
 import ListProductsComponent from './ListProductsComponent'
-import ErrorComponent from './ErrorComponent'
 import WelcomeComponent from './WelcomeComponent'
 import LoginComponent from './LoginComponent'
 import ProductComponent from './ProductComponent'
@@ -91,7 +90,7 @@ export default function JustOrderApp() {
                             </AuthenticatedRoute>
                         } />
                         
-                        <Route path='*' element={<ErrorComponent /> } />
+                        <Route path="*" element={<Navigate to="/" replace />} />
 
                     </Routes>
                 </BrowserRouter>
