@@ -1,6 +1,6 @@
 ### Using XML to instrument method
 
-- Instrumentat the following method of the class: 
+- You want to understand the performance metric of `checkInventory` method in `orderService` application  
 
      ![Lab Diagram](../assets/images/methodXMLInstrumented.png) 
 
