@@ -17,7 +17,7 @@ function HeaderComponent() {
                 <div className="row">
                     <nav className="navbar navbar-expand-sm navbar-light bg-light">
                         <a className="navbar-brand ms-3 fs-3 fw-bold text-black" href="https://github.com/haihongren/instrumentation_workshop"> 
-                        <img src="/just-order-app-logo.png" alt="Just Order App Logo" className="me-2" /> workshop@github</a>
+                        <img src="/just-order-app-logo.png" alt="Just Order App Logo" className="me-2 rounded-circle" /> workshop@github</a>
                         <div className="collapse navbar-collapse">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
