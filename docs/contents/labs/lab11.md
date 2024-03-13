@@ -4,8 +4,7 @@
 
   > 1. to keep track of the `vendor` info for which the `checkRating` being called   
   > 2. to keep track how many times the `checkRating` being called per vendor   
-<br/>
-
+  
 - You do have access to the jar file of the application and you identify the class and method where you can capture the required metrics.   
 
     ![Lab Diagram](../assets/images/classToWeave.png)
