@@ -1,9 +1,10 @@
 ### Using XML to instrument method
 
-- You want to understand the performance metric of `checkInventory` method in `orderService` application  
+- You want to understand the performance metric of `checkInventory` method in `orderService` application without changing the application code   
 
      ![Lab Diagram](../assets/images/methodXMLInstrumented.png) 
 
+- XML instrumetation allows user to do basic instrumentation without change application code    
 - Create xml file `checkInventory_instrument.xml` in <newrelic-agent/extensions> folder. The xml name can be any arbitrary name.
 
     ```XML
