@@ -27,6 +27,6 @@
 
     > In NR UI, click SPAServer Application  
     > Click Metrics Explorer  
-    > Filter the metric name configured in above configuration (e.g. `itsCustomer`)
+    > Filter the metric name configured in above configuration (e.g. `itsCustomMetrics`)
 
     ![Lab Diagram](../assets/images/jmxCollectedMetrics.png)
