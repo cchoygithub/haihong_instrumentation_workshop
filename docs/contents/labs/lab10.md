@@ -25,6 +25,8 @@
 
     ```
 
-- It is not required to restart Java agent. Generate order transaction, validate the `checkInventory` is part of the transaction trace. 
+- It is not required to restart Java agent. Generate order transaction, validate the `checkInventory` is part of the transaction trace.  
+    > `checkInventory` is inside orderService application.  
+ 
 
- ![Lab Diagram](../assets/images/xmlInstrumentedResult.png) 
+    ![Lab Diagram](../assets/images/xmlInstrumentedResult.png) 
