@@ -41,23 +41,23 @@ function WelcomeComponent() {
             <h1 className="bordered-text rounded-5">welcome <span className="btn btn-dark btn-lg shadow rounded-5">{username}</span></h1>
 
             <h5  >
-                explore other options - <Link to="/products" className='link-success shadow-sm '> go here </Link>
+                explore other options - <Link to="/products" className='link-info shadow-sm badge'> go here </Link>
             </h5>
          
             <div >
-                <button className="btn btn-success btn-lg m-5 " onClick={() => callOrderRestApi('apple', 'iphone', 1)}>
+                <button className="btn btn-success btn-lg m-5 shadow rounded-5" onClick={() => callOrderRestApi('apple', 'iphone', 1)}>
                     just order apple
                 </button>
                 {/* <button className="btn btn-success btn-lg m-5" onClick={() => callOrderRestApi('apple','iphone',410)}>
                 order apple error</button>      */}
 
-                <button className="btn btn-primary btn-lg m-5" onClick={() => callOrderRestApi('samsung', 'z fold', 1)}>
+                <button className="btn btn-primary btn-lg m-5 shadow rounded-5" onClick={() => callOrderRestApi('samsung', 'z fold', 1)}>
                     just order samsung
                 </button>
-                {/* <button className="btn btn-primary m-5" onClick={() => callOrderRestApi('samsung','z fold',410)}>
+                {/* <button className="btn btn-primary m-5 shadow " onClick={() => callOrderRestApi('samsung','z fold',410)}>
                 order samsung error</button> */}
 
-                <button className="btn btn-danger btn-lg m-5"
+                <button className="btn btn-danger btn-lg m-5 rounded-5"
                         onClick={() => callOrderRestApi('huawei', 'mateX3', 1)}>
                     just order huawei
                 </button>
