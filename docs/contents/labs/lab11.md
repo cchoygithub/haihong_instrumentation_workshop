@@ -60,7 +60,7 @@
   
   You can also restart apps manaully to force the agent to fresh load the extension. 
 
-- Generate `getCoupon` activities, validate the metrics are being
+- Generate `getCoupon` activities, validate the metrics are being captured.
 
     ![Lab Diagram](../assets/images/getCoupon.png)
 
