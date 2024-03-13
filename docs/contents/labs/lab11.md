@@ -1,25 +1,40 @@
 ### Using Weaver to instrument inventoryService -> RatingController.checkRating
 
-- Class and method to be instrumented 
+- Your team does not own `inventoryService` application source code. However, the business has the following requirements:    
+
+  > 1. to keep track of the `vendor` info for which the `checkRating` being called   
+  > 2. to keep track how many times the `checkRating` being called per vendor  
 
     ![Lab Diagram](../assets/images/classToWeave.png)
 
-  > You want to add custom attribute `vendor` to track vendor.   
-  > You also want to add metrics to keep track how many times the `checkRating` being called per vendor.  
+- NR Weaver instrumentation allows you to create a mirrored class which will be merged into application's(e.g. `inventoryService`) class (e.g. `RatingController`) during runtime. 
 
-  ```
-        NewRelic.addCustomParameter("vendor",vendor);
-        NewRelic.incrementCounter("Custom/CheckingRating/"+vendor);
-  ```
+- A Weaver project(`workshop_weaver`) is created to meet the above requirements.   
+  
+  In the `workshop_weaver` project, a dedicate module `inventoryService_Instrumentation` is created to do weaver instrumentation for `inventoryService` application. 
 
-- Class to be instrumented(**left**) vs Weaver Class(**right**) to do the instrumentation
+  > - A mirrored class **com.nr.workshop.inventoryservice.controller.**`RatingController` is created with `@Weave` annotation   
+  > - `checkRating` method in the mirrored class has the same class signature as the application's class  
+  > - `@Trace` annotation added to `checkRating` method  
+  > - The following code is added to achieve the requirements  
+  >  ```
+  >      NewRelic.addCustomParameter("vendor",vendor);
+  >      NewRelic.incrementCounter("Custom/CheckingRating/"+vendor);
+  >  ```
+  > - The `return Weaver.callOriginal();` indicates the original `checkRating` code is called after the above code. 
+
+    ![Lab Diagram](../assets/images/weaverProject.png)
+
+
+- Side by side comparision of the class to be instrumented(**left**) vs Weaver Class(**right**) does the instrumentation
 
     ![Lab Diagram](../assets/images/classVSweaverclass.png)
 
+- The merged(weaved) class (e.g. `RatingController`)  during runtime is sort of like the following:   
+  > The code in the red box comes from weaver class   
+  > The code in the blue box comes from the original application class   
 
-- A Weaver project is already created for the above instrumentation
-
-    ![Lab Diagram](../assets/images/weaverProject.png)
+    ![Lab Diagram](../assets/images/weavedClass.png)
 
 - Run Gradle build to build the instrumentation module jar file
 
