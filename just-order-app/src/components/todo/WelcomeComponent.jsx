@@ -38,7 +38,7 @@ function WelcomeComponent() {
     return (
         <div className="WelcomeComponent">
 
-            <h1 className="bordered-text">welcome <span className="btn btn-dark btn-lg shadow-sm">{username}</span></h1>
+            <h1 className="bordered-text rounded-5">welcome <span className="btn btn-dark btn-lg shadow rounded-5">{username}</span></h1>
 
             <h5  >
                 explore other options - <Link to="/products" className='link-success shadow-sm '> go here </Link>

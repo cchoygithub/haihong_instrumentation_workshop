@@ -84,7 +84,7 @@ function ListProductsComponent() {
 
     return (
         <div className="container">
-         <h1 className="bordered-text" >just order it</h1>
+         <h1 className="bordered-text rounded-5" >just order it</h1>
             <div className="container d-flex justify-content-center align-items-center">
             <div className="card col-md-12 bg-light border-secondary shadow-sm" >
             
