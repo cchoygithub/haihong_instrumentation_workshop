@@ -33,7 +33,7 @@ function LoginComponent() {
 
     return (
         <div className="Login">
-            <h1 className="bordered-text">login to order</h1>
+            <h1 className="bordered-text rounded-5">login to order</h1>
             {showErrorMessage && <div className="errorMessage">Authentication Failed. 
                                                             Please check your credentials.</div>}
             <div className="LoginForm">
