@@ -15,9 +15,18 @@
     - It calls the other two services using respective service components - those services need to be updated to handle/link the `token`.  
     - The `executorService` is the one calling the other services in a new thread.   
     
-    **getVendorDetails**
+
+    **vendorController**
+    > search for WORKSHOP_LAB8  
+    > uncomment the lines shown in the screenshot  
+
      ![Lab Diagram](../assets/images/multiThreadToken1.png)
- 
+
+    > search for WORKSHOP_LAB8  
+    > comment the lines shown in the screenshot  
+    
+      ![Lab Diagram](../assets/images/multiThreadToken1-1.png)
+
     - Here are the two service components.   
         - The green box is the original method which does not handle `token`. 
         - Developer will add new method(in red box) to handle `token` 
