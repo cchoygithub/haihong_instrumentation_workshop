@@ -65,10 +65,14 @@ function WelcomeComponent() {
                 order huawei Error</button>                                        */}
 
             </div>
-
+            <div className="container d-flex justify-content-center align-items-center">
+            <div className="card col-md-12 bg-light border-secondary shadow-sm" >
             <div className="text-class">{message.split('\n').map((item, key) => {
                 return <span key={key}>{item}<br/></span>
             })}</div>
+            </div>
+            </div>
+
         </div>
     )
 }

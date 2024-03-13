@@ -85,12 +85,15 @@ function ListProductsComponent() {
     return (
         <div className="container">
          <h1 className="bordered-text" >just order it</h1>
-
+            <div className="container d-flex justify-content-center align-items-center">
+            <div className="card col-md-12 bg-light border-secondary shadow-sm" >
             
             {message && <div className="text-class  mx-4 " >{message.split('\n').map((item, key) => {
                     return <span key={key}>{item}<br/></span>
                 })}</div>}
   
+            </div>
+            </div>
             <div>
                 <table className="table">
                     <thead>

@@ -8,7 +8,7 @@ public class SpaController {
 
     @RequestMapping(value = "/**/{path:[^\\.]*}")
     public String redirect() {
-        return "index.html";
+        return "/";
     }
 
 }
