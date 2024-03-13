@@ -13,7 +13,7 @@
 
 - A Weaver project(`workshop_weaver`) is created to meet the above requirements.   
   > Weaver instrumetation by itself is a seperate workshop  
-  > The purpose of this lab is to illustrate the basic concept of the Weaver instrumetation  
+  > The purpose of this lab is to illustrate the basic concept of Weaver instrumetation  
 
   
 - In the `workshop_weaver` project(included in this package), a dedicate module `inventoryService_Instrumentation` is created to do weaver instrumentation for `inventoryService` application. In this `inventoryService_Instrumentation` module : 
