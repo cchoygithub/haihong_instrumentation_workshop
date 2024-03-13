@@ -4,16 +4,17 @@ label, input, button {
 }
 
 .text-class {
-    width: 95%; /* 60% of the screen width */
-    border: 2px solid lightcyan; /* Thicker border in cyan */
+    width: 96%; /* 60% of the screen width */
+    border: 1px solid lightcyan; /* Thicker border in cyan */
     background-color:rgb(26, 24, 24); /* Dark background */
     color: greenyellow; 
     text-align: left; /* Left-aligned text */
-    margin: 20px auto; /* Center horizontally with 20px margin around the box */
+    margin: 10px auto; /* Center horizontally with 20px margin around the box */
     font-size: 18px; /* Smaller font size */
-    padding: 20px; /* Add 20px padding around the text inside the box */  
+    padding: 10px; /* Add 20px padding around the text inside the box */  
     white-space: pre-wrap;
     word-break: break-all; /* Allow long words to break */    
+    border-radius: 6px;
     /* overflow: auto;  */
   }
   
