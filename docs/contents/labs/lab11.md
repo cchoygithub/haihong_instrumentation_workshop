@@ -4,12 +4,12 @@
 
   > 1. to keep track of the `vendor` info for which the `checkRating` being called   
   > 2. to keep track how many times the `checkRating` being called per vendor   
-  
+
 - You do have access to the jar file of the application and you identify the class and method where you can capture the required metrics.   
 
     ![Lab Diagram](../assets/images/classToWeave.png)
 
-- NR Weaver instrumentation allows you to create a mirrored class which is merged into application's(e.g. `inventoryService`) class (e.g. `RatingController`) during runtime. 
+- NR Weaver instrumentation allows you to create a mirrored class which merges into application's(e.g. `inventoryService`) class (e.g. `RatingController`) during runtime. 
 
 - A Weaver project(`workshop_weaver`) is created to meet the above requirements.   
   > Weaver instrumetation by itself is a seperate workshop  
