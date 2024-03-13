@@ -1,4 +1,4 @@
-### Using Weaver to instrument inventoryService -> RatingController.checkRating
+### Using Weaver to instrument inventoryService
 
 - Your team does not own `inventoryService` application source code. However, the business has the following requirements:    
 
