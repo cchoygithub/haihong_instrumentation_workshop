@@ -14,7 +14,12 @@
      ![Lab Diagram](../assets/images/gc_objectName.png)
 
 
-- Create a yml file (e.g. GC_JMX_example.yml), save it to `<newrelic agent>/extensions` folder (create `extensions` folder if it does exist)
+- Create a yml file (e.g. GC_JMX_example.yml) shown in the screenshot, save it to `<newrelic agent>/extensions` folder
+    > filename can be any name with `.yml` extension
+    > create `extensions` subfolder if it does exist   
+    > sample `GC_JMX_example.yml` is provded in the package (review and copy it to the `extensions` folder)
+    
+
     - wildcard(*) can be used   
         - In the following example, `java.lang:name=*` has `*`. It matches any name (including `PS MarkSweep`)
     - {name} property reference 
